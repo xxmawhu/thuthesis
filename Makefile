@@ -37,7 +37,7 @@ $(PACKAGE).pdf: cls FORCE_MAKE
 	$(LATEXMK) $(PACKAGE).dtx
 
 $(THESIS).pdf: cls FORCE_MAKE
-	$(LATEXMK) $(THESIS)
+	$(LATEXMK) -f $(THESIS)
 
 $(SPINE).pdf: cls FORCE_MAKE
 	$(LATEXMK) $(SPINE)

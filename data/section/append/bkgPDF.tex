@@ -1,0 +1,49 @@
+\section{Background Shape}
+\label{Sec: appendix background shape}
+In the procedure of set UL, the signal shape is modeled by the MC
+shape, using the \textbf{RooKeysPdf}. Still the uncertainties of
+background shape will affect the UL. To estimate such uncertainty, the
+different shapes of background are obtained by changing the smooth
+parameter "rho" from 1.0 to 4.0. The change of background shape is
+shown in Fig. \ref{fig:rho}
+\begin{figure}[htbp]
+    \begin{center}
+    \mbox{
+        \begin{overpic}[width = 0.7 \linewidth]{./section/append/fig/rho.eps}
+        \put(25,70) { }
+        \end{overpic}
+    }
+    \end{center}
+    \caption{Change the smooth parameter. The black points with error
+        bars are the MC sample. The red solid line is the
+    nominal background shape, while the dotted line denote possible
+candidates.}
+    \label{fig:rho}
+\end{figure}
+
+To test the goodness of those PDFs, we do I/O check for the "rho"
+value 1.0, 2.0 and 4.0. The pull distributions are shown in Fig. 
+\ref{fig:pull_rho}
+\begin{figure}[htbp]
+    \begin{center}
+    \mbox{
+        \begin{overpic}[width = 0.3
+            \linewidth]{/besfs/groups/jpsi/jpsigroup/user/maxx/4180/PPbarEnu_newPID/IOcheck/test/rho_1/fit/Pull_fit.eps}
+            \put(22,70) { $\rho=1.0$ }
+        \end{overpic}
+        \begin{overpic}[width = 0.3
+            \linewidth]{/besfs/groups/jpsi/jpsigroup/user/maxx/4180/PPbarEnu_newPID/IOcheck/test/rho_2/fit/Pull_fit.eps}
+            \put(22,70) { $\rho=2.0$ }
+        \end{overpic}
+        \begin{overpic}[width = 0.3
+            \linewidth]{/besfs/groups/jpsi/jpsigroup/user/maxx/4180/PPbarEnu_newPID/IOcheck/test/rho_4/fit/Pull_fit.eps}
+            \put(22,70) { $\rho=4.0$ }
+        \end{overpic}
+    }
+    \end{center}
+    \caption{}
+    \label{fig:pull_rho}
+\end{figure}
+
+
+

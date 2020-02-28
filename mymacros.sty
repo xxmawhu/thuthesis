@@ -1,0 +1,168 @@
+%------------------------------------------------------------------------------%
+\def\<{\langle}
+\def\>{\rangle}
+\newcommand{\bA}{\textbf{A}}
+\newcommand{\bB}{\textbf{B}}
+\newcommand{\bc}{\textbf{c}}
+\newcommand{\bG}{\textbf{G}}
+\newcommand{\bV}{\textbf{V}}
+\newcommand{\bE}{\textbf{E}}
+\newcommand{\bF}{\textbf{F}}
+\newcommand{\bn}{\textbf{n}}
+\newcommand{\bbb}{\textbf{b}}
+\newcommand{\by}{\textbf{y}}
+\newcommand{\bt}{\textbf{t}}
+\newcommand{\bbm}{\textbf{m}}
+\newcommand{\Eta}{\boldsymbol{\eta}}
+\newcommand{\Alpha}{\boldsymbol{\alpha}}
+\newcommand{\Beta}{\boldsymbol{\beta}}
+\newcommand{\grad}{\ensuremath{^{\circ}}}
+
+\newcommand{\gm}{\gamma}
+\newcommand{\eps}{e^{+}}
+\newcommand{\ems}{e^{-}}
+\newcommand{\epm}{e^{\pm}}
+%\newcommand{\emp}{e^{\mp}}
+\newcommand{\ee}{e^{+}e^{-}}
+\newcommand{\pip}{\pi^{+}}
+\newcommand{\pim}{\pi^{-}}
+\newcommand{\piz}{\pi^{0}}
+\newcommand{\pipm}{\pi^{\pm}}
+\newcommand{\pimp}{\pi^{\mp}}
+\newcommand{\kp}{K^{+}}
+\newcommand{\km}{K^{-}}
+\newcommand{\kpm}{K^{\pm}}
+\newcommand{\kmp}{K^{\mp}}
+\newcommand{\kz}{{K}^{0}}
+\newcommand{\ks}{{K}_{S}}
+\newcommand{\kzb}{\overline{K}{}^{0}}
+\newcommand{\kzs}{K^{0}_{S}}
+\newcommand{\pb}{\overline{p}}
+\newcommand{\ppm}{p^{\pm}}
+\newcommand{\pmp}{p^{\mp}}
+\newcommand{\dps}{D^{+}}
+\newcommand{\dms}{D^{-}}
+\newcommand{\dz}{D^{0}}
+\newcommand{\dzb}{\overline{D}{}^{0}}
+\newcommand{\dd}{D^{+}D^{-}}
+\newcommand{\dst}{D^{*}}
+\newcommand{\dstp}{D^{*+}}
+\newcommand{\dstm}{D^{*-}}
+\newcommand{\dstz}{D^{*0}}
+\newcommand{\dstb}{\overline{D}{}^{*0}}
+\newcommand{\bz}{{B}^{0}}
+\newcommand{\bzb}{\overline{B}{}^{0}}
+\newcommand{\sgmp}{\Sigma^{+}}
+\newcommand{\sgmz}{\Sigma^{0}}
+\newcommand{\sgmm}{\Sigma^{-}}
+\newcommand{\xiz}{\Xi^{0}}
+\newcommand{\xim}{\Xi^{-}}
+\newcommand{\lmd}{\Lambda}
+\newcommand{\lmb}{\bar{\Lambda}}
+\newcommand{\lc}{\Lambda_{c}}
+\newcommand{\lcp}{\Lambda_{c}^{+}}
+\newcommand{\lcm}{\bar{\Lambda}_{c}^{-}}
+\newcommand{\lcpm}{\Lambda_{c}^{\pm}}
+\newcommand{\lcmp}{\Lambda_{c}^{\mp}}
+\newcommand{\jpsi}{J/\psi}
+\newcommand{\psip}{\psi(3686)}
+\newcommand{\psipp}{\psi(3770)}
+\newcommand{\psippp}{\psi(4600)}
+\newcommand{\mumu}{\mu^{+}\mu^{-}}
+
+\newcommand{\lctolx}{\Lambda_{c} \to \lmd + X}
+\newcommand{\lcptolx}{\Lambda_{c}^{+} \to \lmd + X}
+\newcommand{\lcmtolx}{\bar{\Lambda}_{c}^{-} \to \lmb + X}
+\newcommand{\lcptopks}{\Lambda_{c}^{+} \to p \kzs}
+\newcommand{\lcptopkpi}{\Lambda_{c}^{+} \to p K^{-} \pi^{+}}
+\newcommand{\lcptolpi}{\Lambda_{c}^{+} \to \Lambda \pi^{+}}
+\newcommand{\lcptolk}{\Lambda_{c}^{+} \to \Lambda K^{+}}
+\newcommand{\lcptolenu}{\Lambda_{c}^{+} \to \Lambda e^{+} \nu_{e}}
+\newcommand{\lcptolpipiz}{\Lambda_{c}^{+} \to \Lambda \pi^{+} \pi^{0}}
+\newcommand{\lcmtopks}{\bar{\Lambda}_{c}^{-} \to \overline{p} \kzs}
+\newcommand{\lcmtopkpi}{\bar{\Lambda}_{c}^{-} \to \overline{p} K^{+} \pi^{-}}
+\newcommand{\lcmtolpi}{\bar{\Lambda}_{c}^{-} \to \lmb \pi^{-}}
+\newcommand{\lcmtolk}{\bar{\Lambda}_{c}^{-} \to \lmb K^{-}}
+\newcommand{\lcmtolenu}{\bar{\Lambda}_{c}^{-} \to \lmb e^{-} \overline{\nu_{e}}}
+\newcommand{\lcmtolpipiz}{\bar{\Lambda}_{c}^{-} \to \lmb \pi^{-} \pi^{0}}
+\newcommand{\jpsitoll}{J/\psi \to \Lambda \overline{\Lambda}}
+\newcommand{\jpsitopkl}{J/\psi \to p K^{-} \overline{\Lambda}}
+\newcommand{\jpsitopbkl}{J/\psi \to \overline{p} K^{+} \Lambda}
+\newcommand{\jpsitolsgm}{J/\psi \to \overline{\Lambda} \Sigma^{0}}
+\newcommand{\psiptopbkl}{\psi(2S) \to \overline{p} K^{+} \Lambda}
+\newcommand{\dptohhee}{D^{+} \to h^{+} h^{0} \ee}
+\newcommand{\dptopipiee}{D^{+} \to \pi^{+} \pi^{0} \ee}
+\newcommand{\dptokpiee}{D^{+} \to K^{+} \pi^{0} \ee}
+\newcommand{\dptopiksee}{D^{+} \to \pi^{+} K_{s}^{0} \ee}
+\newcommand{\dptokksee}{D^{+} \to K^{+} K_{s}^{0} \ee}
+\newcommand{\dptokpipi}{D^{+} \to K^{-} \pi^{+} \pi^{+}}
+\newcommand{\dptokpipipi}{D^{+} \to K^{-} \pi^{+} \pi^{+} \pi^{0}}
+\newcommand{\dptokspi}{D^{+} \to K_{S}^{0} \pi^{+}}
+\newcommand{\dptokspipi}{D^{+} \to K_{S}^{0} \pi^{+} \pi^{0}}
+\newcommand{\dptokspipipi}{D^{+} \to K_{S}^{0} \pi^{+} \pi^{+} \pi^{-}}
+\newcommand{\dptokkpi}{D^{+} \to K^{-} K^{+} \pi^{+}}
+
+\newcommand{\DD}{D\bar{D}}
+\newcommand{\DsDst}{D_{s}D_{s}{}^{*}}
+\newcommand{\qq}{q\bar{q}}
+\newcommand{\tautau}{\tau^{+}\tau^{-}}
+
+\newcommand{\de}{\Delta E}
+\newcommand{\mbc}{M_{\rm{BC}}}
+\newcommand{\mppi}{M_{p\pim}}
+\newcommand{\mee}{M_{e^{+}e^{-}}}
+\newcommand{\mrecoil}{M_{\rm{recoil}}}
+\newcommand{\cth}{\rm{cos}\theta}
+\newcommand{\pt}{p_{t}}
+\newcommand{\Ecm}{E_\mathrm{cm}}
+\newcommand{\ebeam}{\it{E}_{\rm{beam}}}
+\newcommand{\dedx}{dE/dx}
+\newcommand{\rxy}{\it{R}_{\rm{xy}}}
+\newcommand{\gc}{\gamma \text{-} \rm{conversion}}
+\newcommand{\ntot}{N^{\rm{total}}}
+\newcommand{\ntotsig}{N^{\rm{total}}_{\rm{signal}}}
+\newcommand{\ntotsdb}{N^{\rm{total}}_{\rm{sideband}}}
+
+\newcommand{\cm}{\,\rm{cm}}
+\newcommand{\mev}{\,\rm{MeV}}
+\newcommand{\mevc}{\,\rm{MeV}/\it{c}}
+\newcommand{\mevcc}{\,\rm{MeV}/\it{c}^{\rm{2}}}
+\newcommand{\gev}{\,\rm{GeV}}
+\newcommand{\gevc}{\,\rm{GeV}/\it{c}}
+\newcommand{\gevcc}{\,\rm{GeV}/\it{c}^{\rm{2}}}
+
+\newcommand{\eg}{\emph{e}.\emph{g}.}
+\newcommand{\ie}{\emph{i}.\emph{e}.}
+\newcommand{\cf}{\emph{cf}.\xspace}
+\newcommand{\adhoc}{\emph{ad hoc}\xspace}
+\newcommand{\apriori}{\emph{a priori}\xspace}
+
+\newcommand{\acp}{\mathcal{A}_{\rm{CP}}}
+\newcommand{\brp}{\mathcal{B}_{+}}
+\newcommand{\brm}{\mathcal{B}_{-}}
+\newcommand{\br}[1]{\mathcal{B}(#1)}
+\newcommand{\pcth}{(p,|\cth|)}
+\newcommand{\ptcth}{(p_{t},|\cth|)}
+\newcommand{\Edata}{\sqrt{s} = 4.6 \gev}
+\newcommand{\Esample}{\sqrt{s} = 3.097 \gev}
+\newcommand{\Epsipp}{\sqrt{s} = 3.773 \gev}
+\newcommand{\Dsm}{D_{s}^{-}}
+\newcommand{\Ds}{D_{s}}
+\newcommand{\etap}{\eta\prime}
+\newcommand{\tabincell}[2]{\begin{tabular}{@{}#1@{}}#2\end{tabular}}
+
+% \newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}
+% \newcommand{\xiaochu}{\fontsize{36pt}{\baselineskip}\selectfont}
+% \newcommand{\yihao}{\fontsize{28pt}{\baselineskip}\selectfont}
+% \newcommand{\xiaoyi}{\fontsize{24pt}{\baselineskip}\selectfont}
+% \newcommand{\erhao}{\fontsize{21pt}{\baselineskip}\selectfont}
+% \newcommand{\xiaoer}{\fontsize{18pt}{\baselineskip}\selectfont}
+% \newcommand{\sanhao}{\fontsize{15.75pt}{\baselineskip}\selectfont}
+% \newcommand{\xiaosan}{\fontsize{15pt}{\baselineskip}\selectfont}
+% \newcommand{\sihao}{\fontsize{14pt}{1.5\baselineskip}\selectfont}
+% \newcommand{\xiaosi}{\fontsize{12pt}{\baselineskip}\selectfont}
+% \newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}
+% \newcommand{\xiaowu}{\fontsize{9pt}{\baselineskip}\selectfont}
+% \newcommand{\liuhao}{\fontsize{7.875pt}{\baselineskip}\selectfont}
+% \newcommand{\xiaoliu}{\fontsize{6.5pt}{\baselineskip}\selectfont}
+% \newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}

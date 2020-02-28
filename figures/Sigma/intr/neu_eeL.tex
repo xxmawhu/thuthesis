@@ -1,0 +1,51 @@
+\documentclass[varwidth]{standalone}
+
+\usepackage{tikz}%
+\tikzstyle arrowstyle=[scale=1.5]
+
+\tikefeynmanet{%
+    myvertex/.style {%
+    shape =circle,
+    draw=blue,
+    fill=blue,
+  }
+}
+
+\usepackage[compat=1.1.0]{tikz-feynman}
+
+
+
+\begin{document}
+
+\begin{tikzpicture}
+  \begin{feynman}
+    \vertex (i1) {\(\Sigma^{0}\)};
+    \vertex[right=3cm of i1] (a);
+    \vertex[right=3cm of a] (b);
+    \vertex[right=3cm of b] (f) {\(\Lambda\)};
+
+    \vertex[below=2cm of a] (d1);
+    \vertex[right=3cm of d1] (d2);
+    
+    \vertex[below=1.1cm of d1] (vir);
+    \vertex[below=-0.4cm of d1] (vir2);
+    \vertex[right=6cm of vir] (g1) {\(e^{-}\)};
+    \vertex[right=6cm of vir2] (g2) {\(e^{+}\)};
+    \diagram* {
+        (i1) --[baryon,very thick] (a) --[ultra thick] (b) --[baryon,very thick] (f),
+        (a) --[mphoton,very thick] (d1) --[very thick] (d2) -- [mphoton,very thick](b),
+        (d2)--[electron,very thick] (g2) ,
+        (g1)--[electron,very thick](d1),
+    };
+
+   % \draw [decoration={brace}, decorate] (b1.south west) -- (a1.north west)
+%          node [pos=0.5, left] {\(B^{0}\)};
+   % \draw [decoration={brace}, decorate] (c3.north east) -- (c1.south east)
+    %      node [pos=0.5, right] {\(\pi^{-}\)};
+    %\draw [decoration={brace}, decorate] (a6.north east) -- (b5.south east)
+%          node [pos=0.5, right] {\(\pi^{+}\)};
+  \end{feynman}
+\end{tikzpicture}
+
+\end{document}
+

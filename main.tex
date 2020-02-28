@@ -2,7 +2,7 @@
 % !TeX program = xelatex
 % !TeX spellcheck = en_US
 
-\documentclass[degree=master]{thuthesis}
+\documentclass[degree=doctor]{thuthesis}
   % 学位 degree:
   %   doctor | master | bachelor | postdoc
   % 学位类型 degree-type:
@@ -26,6 +26,8 @@
 
 % 目录
 \tableofcontents
+\listoffigures
+\listoftables
 
 % 符号对照表
 \input{data/denotation}
@@ -33,8 +35,16 @@
 
 % 正文部分
 \mainmatter
-\input{data/chap01}
-\input{data/chap02}
+\include{./section/introduction}
+\include{./section/chap-bes3}
+\include{section/ds_to_ppbarenu}
+\include{section/spinPrece}
+\include{section/jpsipolar}
+\include{section/jpsi_sigma0}
+\include{section/sigma0Decay}
+\include{section/summary}
+
+% 参考文献 
 
 
 % 其它部分
@@ -53,6 +63,7 @@
 
 % 致谢
 \input{data/acknowledgements}
+\include{section/ack}
 
 % 声明
 \statement
@@ -61,10 +72,12 @@
 \appendix
 % \input{data/appendix-survey}       % 本科生：外文资料的调研阅读报告
 % \input{data/appendix-translation}  % 本科生：外文资料的书面翻译
-\input{data/appendix}
+\input{section/appendix_ds}
+\input{section/appendix_polatiz}
 
 % 个人简历
 \input{data/resume}
+\include{section/resume}
 
 % 本科生的综合论文训练记录表
 % \includepdf[pages=-]{scan-record.pdf}
